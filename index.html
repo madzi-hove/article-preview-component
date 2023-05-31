@@ -7,27 +7,60 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="src/css/style.css">
 
   <title>Frontend Mentor | Article preview component</title>
+  <script defer src="src/js/script.js"></script>
 
 <body>
 
-  Shift the overall look and feel by adding these wonderful
-  touches to furniture in your home
+  <main class="container">
+    <picture class="image-container">
+      <img src="src/images/drawers.jpg" alt="Green drawers" class="img container__item">
+    </picture>
+    <div class="content container__item">
+      <h1 class="content__heading">
+        Shift the overall look and feel by adding these wonderful
+        touches to furniture in your home
+      </h1>
+      <p class="content__text">
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
+        to help you make any room feel complete.
+      </p>
+      <div class="article__info active">
+        <div class="author">
+          <img src="src/images/avatar-michelle.jpg" alt="" class="avatar">
+          <div class="author__info">
+            <h2 class="author-name">Michelle Appleton</h2>
+            <span class="article-date">28 Jun 2020</span>
+          </div>
+        </div>
+        <div class="share-icon__container"><img src="images/icon-share.svg" alt="" class="icon"></div>
+      </div>
+      <div class="share active">
+        <div class="share__item">
+          <p class="share__text">Share</p>
+          <div class="icon__container">
+            <img src="src/images/icon-facebook.svg" alt="icon" class="social-media__icon">
+            <img src="src/images/icon-twitter.svg" alt="icon" class="social-media__icon">
+            <img src="src/images/icon-pinterest.svg" alt="icon" class="social-media__icon">
+          </div>
+        </div>
+        <div class="share-icon__container share__item"><img src="images/icon-share.svg" alt="" class="icon"></div>
 
-  Ever been in a room and felt like something was missing? Perhaps
-  it felt slightly bare and uninviting. I’ve got some simple tips
-  to help you make any room feel complete.
+      </div>
+    </div>
+  </main>
 
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        title="Opens in a new tab">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/madzi-hove" title="Opens in a new tab">Madzi Hove</a>.
+    </p>
+  </footer>
 </body>
 
 </html>
